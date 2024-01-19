@@ -34,7 +34,7 @@ subroutine Cofactor(i,j,mat,cof)
     implicit none
     integer:: i,j,a,b,l,k,n,m, mat(3,3), minor(2,2); real :: cof
 
-    ! Generate Minor of mat(i,j)
+    ! Generate Minor of mat(i,j) | This logis is somewhat confusing to understand now
     n=i+1; m=j+1
     if ( n > 3 ) then
         n = 1
